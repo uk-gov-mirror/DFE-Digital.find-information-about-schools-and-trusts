@@ -49,7 +49,7 @@ jobs:
           github-pat: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Upload scan results to GitHub Security
-        uses: github/codeql-action/upload-sarif@ebcb5b36ded6beda4ceefea6a8bc4cc885255bb3 # v3
+        uses: github/codeql-action/upload-sarif@4187e74d05793876e9989daffde9c3e66b4acd07 # v3
         if: always()
         with:
           sarif_file: 'trivy-results.sarif'
